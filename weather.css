@@ -1,0 +1,84 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #222;
+}
+
+.container{
+    margin: 150px auto;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white; 
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 40px 35px;
+}
+
+#city-input{
+    border-radius: 50px;
+    border: none;
+    height: 50px;
+    width: 350px;
+    padding-left: 20px;
+    font-size: 15px;
+    outline: 0;
+}
+
+#search-btn{
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.weather-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+#temp{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#city{
+    font-size: 50px;
+}
+
+.additional-info{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.humidityAndWind{
+    display: flex;
+    align-items: center;
+}
+
+.NumTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+#humidityImg, #windImg{
+    width: 50px;
+    height: 40px;
+}
+
+#windNum, #humidityNum{
+    font-size: 26px;
+}
