@@ -38,7 +38,11 @@ search.addEventListener('click', () => {
         }
         let temperature = document.createElement('span');
         let tempNum = data.main.temp.toString().split('');
-        temperature.textContent = `${tempNum[0]}${tempNum[1]}°c`;
+        if(tempNum[1] != '.'){
+            temperature.textContent = `${tempNum[0]}${tempNum[1]}°c`;
+        } else {
+            temperature.textContent = `${tempNum[0]}°c`;
+        }
         temperature.id = 'temp';
 
         let city = document.createElement('span');
